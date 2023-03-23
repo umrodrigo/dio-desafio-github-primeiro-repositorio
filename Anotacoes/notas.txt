@@ -1,0 +1,9 @@
+Terminal
+
+comandos / flags
+	cd			        - Navegar entre pastas
+	dir			        - Listar pastas e arquivos
+	mkdir		        - Criar novo diretório
+	del /rmdir	        - Deletar arquivos e pastas
+	pwd			        - exibe caminho completo
+	mv arq.md ./pasta/  - move arquivo para pasta
