@@ -1,9 +1,36 @@
 Terminal
 
 comandos / flags
-	cd			        - Navegar entre pastas
-	dir			        - Listar pastas e arquivos
-	mkdir		        - Criar novo diretório
-	del /rmdir	        - Deletar arquivos e pastas
-	pwd			        - exibe caminho completo
-	mv arq.md ./pasta/  - move arquivo para pasta
+	cd			- Navegar entre pastas
+	dir			- Listar pastas e arquivos
+	mkdir		- Criar novo diretório
+	del /rmdir	- Deletar arquivos e pastas
+	pwd			- exibe caminho completo
+	mv arq.md ./pasta/ - move arquivo (arq.md) para pasta (./pasta)
+
+Nome da branch principal MAIN não mais MASTER
+
+O controle de versão é baseado na criptografia SHA1 
+
+Objetos Fundamentais
+
+Blobs
+	Formato do objeto usado para salvar os arquivos com metadados
+Trees
+	Aponta para outras trees ou diretórios (objeto complexo)
+Commits
+	Carrega alterações com metadados de trees e blobs que foram alterados
+	
+Chave SSH
+	
+	Criar SSH
+		ssh-keygen -t ed25519 -C rodrigopacheco.santos@gmail.com
+	Mostrar chave Pública
+		ir até diretório .ssh por padrão fica na pasta do user
+		cat <nome.pub>
+		o resultado adicionamso na conta do GitHub
+	Iniciar Agente SSH	
+		eval $(ssh-agent -s)
+	Vincular chave Privada no agente
+		ssh-add (nomeDoArquivo)
+		Identity added: id_ed25519 (rodrigopacheco.santos@gmail.com)
