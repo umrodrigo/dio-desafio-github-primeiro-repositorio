@@ -1,12 +1,12 @@
 Terminal
 
 comandos / flags
-	cd			- Navegar entre pastas
-	dir			- Listar pastas e arquivos
-	mkdir		- Criar novo diretório
-	del /rmdir	- Deletar arquivos e pastas
-	pwd			- exibe caminho completo
-	mv arq.md ./pasta/ - move arquivo (arq.md) para pasta (./pasta)
+cd			- Navegar entre pastas
+dir			- Listar pastas e arquivos
+mkdir		- Criar novo diretório
+del /rmdir	- Deletar arquivos e pastas
+pwd			- exibe caminho completo
+mv arq.md ./pasta/ - move arquivo (arq.md) para pasta (./pasta)
 
 Nome da branch principal MAIN não mais MASTER
 
@@ -24,7 +24,7 @@ Commits
 Chave SSH
 	
 	Criar SSH
-		ssh-keygen -t ed25519 -C rodrigopacheco.santos@gmail.com
+		ssh-keygen -t ed25519 -C seuEmail@email.com
 	Mostrar chave Pública
 		ir até diretório .ssh por padrão fica na pasta do user
 		cat <nome.pub>
@@ -33,4 +33,37 @@ Chave SSH
 		eval $(ssh-agent -s)
 	Vincular chave Privada no agente
 		ssh-add (nomeDoArquivo)
-		Identity added: id_ed25519 (rodrigopacheco.santos@gmail.com)
+		Identity added: id_ed25519 (seuEmail@email.com)
+
+Comandos git: init add commit
+
+	git config --global user.email "email@email.com"
+	git config --global user.name "Seu Nome"
+	
+	Clonar Repositório
+	git clone git@github.com:umrodrigo/Projeto-A.git
+	
+	git init	
+		Inicializa um repositório, Cria pasta oculta gerencial do git
+	git add *
+		seleciona todos os arquivos da pasta
+	git commit -m "Commit Inicial"
+		cria commit com sua descrição, altera status para Unmodified
+	git status
+		o status
+	git add strogonoff.md  receitas/
+		Adiciona arquivos e pastas novas
+	git remote add origin <linkdo repo do github>
+		associa ao github
+	git remote -v
+		Lista repositório e seus alias
+	git push origin master
+		empurra os arquivos para a nuvem
+	git pull origin master
+		recebe os arquivos da a nuvem
+	
+		
+Servidor
+	Remote Repository
+Ambiente de Desenvolvimento
+	Local Repository	Staging Area	Working Directory
