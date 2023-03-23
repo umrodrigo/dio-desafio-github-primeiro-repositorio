@@ -1,11 +1,11 @@
 Terminal
 
 comandos / flags
-cd			- Navegar entre pastas
-dir			- Listar pastas e arquivos
-mkdir		- Criar novo diretório
-del /rmdir	- Deletar arquivos e pastas
-pwd			- exibe caminho completo
+cd          - Navegar entre pastas
+dir         - Listar pastas e arquivos
+mkdir       - Criar novo diretório
+del /rmdir  - Deletar arquivos e pastas
+pwd         - exibe caminho completo
 mv arq.md ./pasta/ - move arquivo (arq.md) para pasta (./pasta)
 
 Nome da branch principal MAIN não mais MASTER
